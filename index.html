@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="background">
+    <div id="logo-container">
+      <div id="logo-background"></div>
+      <img src="Тризуб.svg" alt="Тризуб.png">
+      <div class="font" id="logo-text">GLORY TO UKRAINE</div>
+    </div>
+    <footer>
+      <div id="credit-background"></div>
+      <div class="font" id="credit-text">Photo by <a
+          href="https://unsplash.com/@create4eyes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olga
+          Subach</a>
+      </div>
+    </footer>
+  </div>
+  <div id="container">
+    <header>
+      <div id="header-background"></div>
+      <p class="font"> The Russian aggresion in Europe requires consolidated and powerful push-back. Support Ukraine in its fight for
+        independence while it stands against the enemy that threatens to destroy the world as we know it!</p>
+    </header>
+    <div id="call" class="font">
+      WILL YOU HAVE A PART IN VICTORY?</div>
+    <form class="form font">
+      <label for="fname">FIRST NAME
+        <input class="font" type="text" name="firstname" id="fname" title="Enter your first name" autocomplete="given-name">
+      </label>
+      <label for="lname">LAST NAME
+        <input class="font" type="text" name="lastname" id="lname" title="Enter your last name" autocomplete="family-name">
+      </label>
+      <label for="email">EMAIL
+        <input class="font" type="email" name="email" id="email"
+          title="Enter your email address. Email should contain @ and domain name" autocomplete="email" required>
+      </label>
+      <label for="phone">PHONE NUMBER
+        <input class="font" type="tel" name="phone" pattern="\(?[0-9]{3}\)?[- \.]?[0-9]{3}[- \.]?[0-9]{4}"
+          title="Enter your phone number. Only numbers 0-9, spaces, dashes and dots" autocomplete="tel">
+      </label>
+      <label for="pwd">PASSWORD (8 characters minimum)
+        <input class="error font" type="password" name="pwd" id="pwd" minlength="8" pattern="[0-9A-Za-z]{8,}"
+          title="Create a password. Upper and lowercase letters, numbers and special characters are required" required>
+      </label>
+      <label for="pwd_confirm">CONFIRM PASSWORD
+        <input class="error font" type="password" name="pwd" id="pwd_confirm" minlength="8"
+          pattern="[0-9A-Za-z]{8,}" title=" Passwords should match" required>
+        <span id="warning" class="font"></span>
+      </label>
+    </form>
+    <div class="log-in font">
+      <input class="font" type="button" id="button" value="Create account">
+      <span class="font" id="confirmation"></span>
+      <p class="font">Already have an account? <a href="">Log in</a></p>
+    </div>
+
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
